@@ -1,14 +1,5 @@
-<p align="center">
-    <img src="assets/cpp-template.jpg" alt="cpp-template logo">
-</p>
-
-This is a minimal cross-platform C++17+ project template using CMake. It's designed as a professional-grade starting point for C++ projects, especially useful for beginners and intermediate developers who want a simple, clean build system.
-
----
-
-## About This Template
-
-This template is configured for **C++ projects only** (`LANGUAGES CXX`). It does not support C, Python, or other languages.
+## project-a1
+This project serves as a test repo for a C++ dummy program. It's generally used to practice writing programs while using a build system to simulate what it would be like working on a professional project.
 
 ### Features
 - Cross-platform (Linux, macOS, Windows)
@@ -29,8 +20,8 @@ cpp-template/
 +-- LICENSE            # MIT License
 +-- .gitignore         # Ignores build files, binaries, and metadata
 +-- src/               # Source files (main.cpp entry point)
-+-- include/           # (Optional) Public headers
-+-- external/          # (Optional) Vendored third-party libraries
++-- include/           # (**Optional**) Public headers
++-- external/          # (**Optional**) Vendored third-party libraries
 +-- assets/            # Images, diagrams, or documentation media
 +-- build/             # CMake build output (ignored by Git)
 ```
