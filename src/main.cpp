@@ -1,6 +1,8 @@
 #include <iostream>
 
 int main() {
-    std::cout << "Hello from cpp-template!" << std::endl;
+
+    std::cout << "Hello1" << std::endl;
+
     return 0;
 }
