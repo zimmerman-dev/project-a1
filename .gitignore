@@ -30,6 +30,7 @@ Makefile
 .DS_Store
 
 # VSCode, CLion, Emacs, etc.
+.vs
 .vscode/
 .idea/
 compile_commands.json

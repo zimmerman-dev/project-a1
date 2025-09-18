@@ -1,5 +1,7 @@
 ## project-a1
-This project serves as a test repo for a C++ dummy program. It's generally used to practice writing programs while using a build system to simulate what it would be like working on a professional project.
+This repo serves as testing/practice ground for writing programs with a build system. The program that I am working on now, is the extra credit problem from chapter 4 review, learncpp.com.
+
+Very simply, it is a simple program that calculates how far a ball drops from a tower every second it falls.
 ___
 ## License
 

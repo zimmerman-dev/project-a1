@@ -1,16 +1,26 @@
 #include <iostream>
-#include <string>
 
-void greeter() {
-    std::cout << "Enter your first name: ";
-    std::string name{};
-    std::cin >> name;
-    std::cout << "Welcome " << name << ".\n";
+#define DEBUG 0
+
+double getTowerHeight() {
+  double towerHeight{};
+  std::cout << "Enter the height of the tower in meters: ";
+  std::cin >> towerHeight;
+  return towerHeight;
 }
 
-int main() {
-    greeter();
-    std::cout << "This is project-a1!" << '\n';
+void printResult(double towerHeight) {
+  std::cout << "The tower is " << towerHeight << " meters tall.\n";
+}
 
-    return 0;
+#if DEBUG 
+double calculateDistance(double towerHeight) {
+}
+#endif
+
+int main() {
+  
+  const double towerHeight{getTowerHeight()};
+  printResult(towerHeight);
+  return 0;
 }
