@@ -1,6 +1,7 @@
 #include <iostream>
 
-#define DEBUG 0
+const double kGravity{9.8};
+const int kAcceleration{2};
 
 double getTowerHeight() {
   double towerHeight{};
@@ -9,18 +10,28 @@ double getTowerHeight() {
   return towerHeight;
 }
 
-void printResult(double towerHeight) {
-  std::cout << "The tower is " << towerHeight << " meters tall.\n";
+int timeSpan() {
+  std::cout << "Enter the your time span in seconds: ";
+  int seconds{};
+  std::cin >> seconds;
+  return seconds;
 }
 
-#if DEBUG 
-double calculateDistance(double towerHeight) {
+double gravityFormula(double towerHeight, int seconds) {
+  double currentHeight{towerHeight -
+                        (kGravity * (seconds * seconds) / kAcceleration)};
+  return currentHeight;
 }
-#endif
 
 int main() {
   
-  const double towerHeight{getTowerHeight()};
-  printResult(towerHeight);
+  const double kTowerHeight{getTowerHeight()};
+  const int kTimeSpan{timeSpan()};
+
+
+  for (size_t i = 0; i < kTimeSpan; ++i) {
+    double distanceFallen{gravityFormula(kTowerHeight, i)};
+    std::cout << "At " << i << " seconds, the ball is at " << distanceFallen << " meters.\n";
+  }
   return 0;
 }
